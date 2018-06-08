@@ -37,7 +37,7 @@ public class Solution {
         List<Word> result = new ArrayList<>();
         AbstractMap.SimpleEntry<Integer, Integer> endPoint;
         int[][] direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, -1}, {-1, 1}};
-        int directions = directon.length;
+        int directions = direction.length;
 
         // проход по каждому символу матрицы
         for (int y = 0; y < crossword.length; y++) {
