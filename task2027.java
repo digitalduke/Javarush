@@ -37,6 +37,7 @@ public class Solution {
         List<Word> result = new ArrayList<>();
         AbstractMap.SimpleEntry<Integer, Integer> endPoint;
         int[][] direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, -1}, {-1, 1}};
+        int directions = directon.length;
 
         // проход по каждому символу матрицы
         for (int y = 0; y < crossword.length; y++) {
@@ -48,7 +49,7 @@ public class Solution {
                     if (crossword[y][x] == word.charAt(0)) {
                         if (word.length() > 1) {
                             // поиск по векторам
-                            for (int vector = 0; vector < 8; vector++) {
+                            for (int vector = 0; vector < directions; vector++) {
                                 endPoint = findEnd(crossword, word, x, y, direction[vector][0], direction[vector][1]);
                                 if (endPoint != null) {
                                     Word foundedWord = new Word(word);
