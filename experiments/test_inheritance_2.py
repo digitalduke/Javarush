@@ -1,3 +1,4 @@
+
 class Shape:
 	def __init__(self, color, name):
 		self.color = color

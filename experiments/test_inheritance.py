@@ -1,3 +1,4 @@
+
 class Figure:
 	"""docstring for Figure"""
 	def __init__(self, color):
