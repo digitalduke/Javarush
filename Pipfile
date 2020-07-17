@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+click = "~=7.1"
 
 [dev-packages]
 
