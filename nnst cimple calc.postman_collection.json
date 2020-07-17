@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "cbcd1a1c-0ea8-4618-af3d-619161ce01f5",
+		"name": "nnst cimple calc",
+		"description": "insurance calculator request examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "how much 2 and glass?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-price?declared_cost=2&cargo_type=glass",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "declared_cost",
+							"value": "2"
+						},
+						{
+							"key": "cargo_type",
+							"value": "glass"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 and other?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-price?declared_cost=3&cargo_type=other",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "declared_cost",
+							"value": "3"
+						},
+						{
+							"key": "cargo_type",
+							"value": "other"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "how much glass and glass?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-price?declared_cost=glass&cargo_type=glass",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "declared_cost",
+							"value": "glass"
+						},
+						{
+							"key": "cargo_type",
+							"value": "glass"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "maybe wine?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-price?declared_cost=3&cargo_type=wine",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "declared_cost",
+							"value": "3"
+						},
+						{
+							"key": "cargo_type",
+							"value": "wine"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "what about Glass?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-price?declared_cost=2&cargo_type=Glass",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "declared_cost",
+							"value": "2"
+						},
+						{
+							"key": "cargo_type",
+							"value": "Glass"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cow super power?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-price?declared_cost=2&cargo_type=cow_super_power",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "declared_cost",
+							"value": "2"
+						},
+						{
+							"key": "cargo_type",
+							"value": "cow_super_power"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
