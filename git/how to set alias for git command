@@ -1,5 +1,0 @@
-git config --global alias.gud '!sh -c "echo "test""'
-
-$ cat ~/.gitconfig
-[alias]
-        gud = !sh -c \"echo \"test\"\"
