@@ -7,7 +7,7 @@ $ docker build -t nnst .
 $ docker run -d -p 5000:8080 --name=nnst nnst:latest
 ```
 
-* open page at http://127.0.0.1:8080
+* use requests from [calc.postman_collection.json](https://github.com/digitalduke/snippets/blob/nnst/nnst%20cimple%20calc.postman_collection.json)
 
 * stop container
 ```shell script
