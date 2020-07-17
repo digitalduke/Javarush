@@ -52,3 +52,15 @@ class DbManager:
             for query in SqlGenerator.get_drop_db_queries():
                 stdout.write(f"Executing query: {query}\n")
                 connection.execute(query)
+
+    @staticmethod
+    def get_current_rate_by_cargo_type(cargo_type: str) -> float:
+        with sqlite3.connect(DATABASE_NAME) as connection:
+            query = SqlGenerator.get_current_rate_by_cargo_type(cargo_type)
+            stdout.write(f"Executing query: {query}\n")
+
+            raw_response = connection.execute(query)
+            response = raw_response.fetchone()
+            stdout.write(f"Response: {response}\n")
+
+        return response[0] if response else None

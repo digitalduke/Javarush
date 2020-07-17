@@ -51,3 +51,13 @@ class SqlGenerator:
             VALUES ('{cargo_type}', {rate}, {history_id})
         """
         return query
+
+    @staticmethod
+    def get_current_rate_by_cargo_type(cargo_type: str) -> str:
+        query = f"""
+            SELECT rate
+            FROM rates
+            JOIN rates_history AS rh ON rates.rate_history_id = rh.id
+            WHERE cargo_type='{cargo_type}' ORDER BY start_from desc LIMIT 1;
+        """
+        return query
