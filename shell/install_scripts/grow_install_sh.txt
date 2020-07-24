@@ -1,0 +1,18 @@
+dnslookup: 0,000000 | connect: 0,000000 | appconnect: 0,000000 | pretransfer: 0,000000 | starttransfer: 0,000000 | total: 0,001281 | size: 0
+#!/bin/bash
+
+# The install script for the Grow.
+# Learn more: http://grow.io
+
+URL=https://raw.githubusercontent.com/grow/grow/master/install.py
+
+function download {
+  scratch=$(mktemp -d -t tmp.XXXXXXXXXX) || exit
+  script_file=$scratch/install_growsdk.py
+  curl -fsSL $URL > $script_file || exit
+  chmod 775 $script_file
+  python $script_file
+}
+
+download < /dev/tty
+dnslookup: 0,786681 | connect: 0,815170 | appconnect: 0,887265 | pretransfer: 0,887379 | starttransfer: 1,701087 | total: 1,701911 | size: 367
